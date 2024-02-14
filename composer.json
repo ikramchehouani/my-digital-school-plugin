@@ -1,0 +1,17 @@
+{
+    "name": "ikram/my-digital-school-plugin",
+    "description": "test",
+    "license": "test",
+    "autoload": {
+        "psr-4": {
+            "Ikram\\MyDigitalSchoolPlugin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ikramchehouani",
+            "email": "ikram_chehouani@outlook.fr"
+        }
+    ],
+    "require": {}
+}
