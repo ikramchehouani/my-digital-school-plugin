@@ -1,41 +1,40 @@
 <?php
-// FILEPATH: /Users/armel/workspace/my-digital-school-plugin/src/calaculatrice.php
 
-// Fonction pour effectuer une addition
-function addition($a, $b) {
-    return $a + $b;
+function addition($nombre1, $nombre2) {
+    return $nombre1 + $nombre2;
 }
 
-// Fonction pour effectuer une soustraction
-function soustraction($a, $b) {
-    return $a - $b;
+function soustraction($nombre1, $nombre2) {
+    return $nombre1 - $nombre2;
 }
 
-// Fonction pour effectuer une multiplication
-function multiplication($a, $b) {
-    return $a * $b;
+function multiplication($nombre1, $nombre2) {
+    return $nombre1 * $nombre2;
 }
 
-// Fonction pour effectuer une division
-function division($a, $b) {
-    if ($b != 0) {
-        return $a / $b;
+function division($nombre1, $nombre2) {
+    if ($nombre2 != 0) {
+        return $nombre1 / $nombre2;
     } else {
         return "Erreur : division par zéro";
     }
 }
 
-// Utilisation des fonctions
-$a = 10;
-$b = 5;
+function racineCarree($nombre) {
+    return sqrt($nombre);
+}
 
-$resultat_addition = addition($a, $b);
-$resultat_soustraction = soustraction($a, $b);
-$resultat_multiplication = multiplication($a, $b);
-$resultat_division = division($a, $b);
+$nombre1 = 10;
+$nombre2 = 5;
+
+$resultat_addition = addition($nombre1, $nombre2);
+$resultat_soustraction = soustraction($nombre1, $nombre2);
+$resultat_multiplication = multiplication($nombre1, $nombre2);
+$resultat_division = division($nombre1, $nombre2);
+$resultat_racine_carree = racineCarree($nombre1);
 
 echo "Résultat de l'addition : " . $resultat_addition . "<br>";
 echo "Résultat de la soustraction : " . $resultat_soustraction . "<br>";
 echo "Résultat de la multiplication : " . $resultat_multiplication . "<br>";
 echo "Résultat de la division : " . $resultat_division . "<br>";
-?>
+echo "Résultat de la racine carrée : " . $resultat_racine_carree . "<br>";
