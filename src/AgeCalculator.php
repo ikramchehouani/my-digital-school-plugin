@@ -11,6 +11,6 @@ class AgeCalculator
 
         $age = $currentDate->diff($birthDate)->y;
 
-        return $age;
+        return $birthDate;
     }
 }
