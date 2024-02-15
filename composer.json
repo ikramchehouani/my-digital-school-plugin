@@ -1,7 +1,7 @@
 {
     "name": "ikram/my-digital-school-plugin",
-    "description": "test",
-    "license": "test",
+    "type": "composer-plugin",
+    "license": "ISC",
     "autoload": {
         "psr-4": {
             "Ikram\\MyDigitalSchoolPlugin\\": "src/"
